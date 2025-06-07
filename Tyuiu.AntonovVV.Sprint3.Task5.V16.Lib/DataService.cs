@@ -17,3 +17,4 @@ namespace Tyuiu.AntonovVV.Sprint3.Task5.V16.Lib
             return Math.Round(sumSeries, 3);
         }
     }
+}
