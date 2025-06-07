@@ -5,17 +5,18 @@ namespace Tyuiu.AntonovVV.Sprint3.Task1.V5.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void GetMultiplySeries()
+        public void ValidGetMultiplySeries()
         {
             DataService ds = new DataService();
-
-            int value = 1;
             int startValue = 1;
-            int stopValue = 13;
+            int stopValue = 10;
+            double res = ds.GetMultiplySeries(startValue, stopValue);
+            double wait = 3.195;
+            Assert.AreEqual(wait, res);
 
-            var res = ds.GetMultiplySeries(startValue, stopValue, value);
 
-            Assert.AreEqual(1, res);
+
+
         }
     }
 }
