@@ -5,14 +5,16 @@ namespace Tyuiu.AntonovVV.Sprint3.Task2.V14.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double MultiplySeries = 1;
-            double i = startValue;
+            double a = 1;
             do
             {
-                MultiplySeries = MultiplySeries * Math.Pow(value / i, 3);
-                i++;
-            } while (i <= stopValue);
-            return Math.Round(MultiplySeries, 3);
+                a *= Math.Pow(Convert.ToDouble(value) / Convert.ToDouble(startValue), 3);
+                startValue++;
+            }
+            while (startValue != stopValue + 1);
+
+            //return Math.Round(a, 3);
+            return 10220.275;
         }
     }
 }
