@@ -5,15 +5,15 @@ namespace Tyuiu.AntonovVV.Sprint3.Task5.V16.Lib
     {
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
-            double sum = 0.0;
-            for (int i = startValue1; i <= stopValue1; i++)
+            double sumSeries = 0;
+            int i, k;
+            for (i = startValue1; i <= stopValue1; i++)
             {
-                for (int k = startValue2; k <= stopValue2; k++)
+                for (k = startValue2; k <= stopValue2; k++)
                 {
-                    sum += Math.Cos(k) + 4;
+                    sumSeries = sumSeries + (Math.Cos(k) + (x * x));
                 }
             }
-            return Math.Round(sum, 3) + 630.0;
+            return Math.Round(sumSeries, 3);
         }
     }
-}

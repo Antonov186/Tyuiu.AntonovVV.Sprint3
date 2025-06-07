@@ -11,7 +11,7 @@ namespace Tyuiu.AntonovVV.Sprint3.Task5.V16
             Console.WriteLine("* Тема: Вложенные циклы                                                   *");
             Console.WriteLine("* Задание #5                                                              *");
             Console.WriteLine("* Вариант #16                                                             *");
-            Console.WriteLine("* Выполнил: Выполнил: Антонов В. В. | ИСПб-24-1                           *")
+            Console.WriteLine("* Выполнил: Выполнил: Антонов В. В. | ИСПб-24-1                           *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Вычислить сумму Cos(k) + x^2 при X=2                                    *");
